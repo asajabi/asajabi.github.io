@@ -1,57 +1,48 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 /* Option 1: Neutral background */
 body {
-    background-color: #f4f4f4; /* Light gray */
+  background-color: #f4f4f4; /* Light gray */
 }
 
-/* Option 2: Soft contrasting background */
-
-/* Option 3: Complementary background */
-
-
-/* Option 4: Analogous background */
-
-
-
 .logo {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack the image and text vertically */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack the image and text vertically */
 }
 
 .logo img {
-    position: relative;
-    width: 150px; /* Adjust the size of the image */
-    margin-bottom: 1px; /* Add spacing between the image and text */
+  position: relative;
+  width: 150px; /* Adjust the size of the image */
+  margin-bottom: 1px; /* Add spacing between the image and text */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    background: #333;
-    overflow: hidden;
-    color: #fff;
+  list-style: none;
+  padding: 0;
+  background: #333;
+  overflow: hidden;
+  color: #fff;
 }
 
 nav ul li {
-    display: inline;
-    padding: 20px; /* Adjust padding for better spacing */
+  display: inline;
+  padding: 20px; /* Adjust padding for better spacing */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1px; /* Add some padding */
-    margin-top: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1px; /* Add some padding */
+  margin-top: 20px;
 }
