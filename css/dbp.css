@@ -23,21 +23,24 @@ body {
   
   /* Header Styling */
   header {
-    position: relative; /* Keep the rest of the header in normal flow */
-    background-color: #293089; /* Your header background color */
+    position: relative; /* Ensure header content stays in place */
+    background-color: #ffffff; /* Header background color */
     color: white;
-    padding: 20px 20px 20px 130px; /* Add left padding to account for the logo */
+    padding: 50px 20px 50px 130px; /* Top, Right, Bottom, Left padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0px; /* Adjust this if more spacing is needed below */
   }
   
+  /* Navigation Menu Styling */
   header nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 0px 50px; /* Top, Right, Bottom, Left padding */
     display: flex;
     gap: 30px;
+    font-size: large;
   }
   
   header nav ul li {
@@ -45,7 +48,7 @@ body {
   }
   
   header nav ul li a {
-    color: wheat;
+    color: #293089;
     text-decoration: none;
     font-weight: bold;
   }
