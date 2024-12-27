@@ -4,38 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - DBPCO</title>
-    <link rel="stylesheet" href="../css/dbp.css" type="text/css" />
+    <link rel="stylesheet" href="../css/dbp.css" />
   </head>
   <body>
     <header>
       <div class="logo-container">
         <a href="../index.html"><img src="../img/logo.png" alt="Company Logo" /></a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="aboutus.html">About</a></li>
-        </ul>
-      </nav>
+      <div class="hamburger-lang-container">
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="lang-toggle">EN</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" data-key="home">Home</a></li>
+        <li><a href="services.html" data-key="services">Services</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="aboutus.html" data-key="about">About</a></li>
+      </ul>
     </header>
 
     <main>
       <section class="about">
-        <h1>About Us</h1>
+        <h1 data-key="about-title">About Us</h1>
         <h2>Our Story</h2>
-        <p>Founded in 1995, Delta Batt'ha Parts Co. has been a trusted supplier of genuine car parts for over 25 years. We pride ourselves on quality, customer satisfaction, and reliability.</p>
+        <p>
+          Established in 1990, DELTA AL-BATT'HA TRADING CO. has been a trusted retailer of genuine NISSAN auto parts for over three decades.
+        </p>
         <h2>Our Mission</h2>
-        <p>To provide the highest-quality car parts and exceptional service to our customers worldwide.</p>
-        <h2>Our Team</h2>
-        <p>Our dedicated team works tirelessly to meet the needs of every customer, ensuring their vehicles perform at their best.</p>
+        <p>To provide authentic NISSAN auto parts that meet the highest standards of quality.</p>
+        <h2>Our Vision</h2>
+        <p>To become the most reliable and customer-focused retailer of NISSAN auto parts.</p>
       </section>
     </main>
 
     <footer>
-      <p>© 2024 Delta Batt'ha Parts Co. All rights reserved.</p>
-      <p>Contact us: <a href="mailto:info@dbpco.com">info@dbpco.com</a> | Phone: +123-456-7890</p>
+      <p data-key="footer-rights">© 2024 DELTA AL-BATT'HA TRADING CO. All rights reserved.</p>
+      <p data-key="footer-contact">Phone: +123-456-7890 | Email: contact@deltaparts.com</p>
     </footer>
+    <script src="../js/dbp.js"></script>
   </body>
 </html>

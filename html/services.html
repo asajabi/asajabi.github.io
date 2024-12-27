@@ -11,19 +11,25 @@
       <div class="logo-container">
         <a href="../index.html"><img src="../img/logo.png" alt="Company Logo" /></a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="aboutus.html">About</a></li>
-        </ul>
-      </nav>
+      <div class="hamburger-lang-container">
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="lang-toggle">EN</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" data-key="home">Home</a></li>
+        <li><a href="services.html" data-key="services">Services</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="aboutus.html" data-key="about">About</a></li>
+      </ul>
     </header>
 
     <main>
       <section class="services">
-        <h1>Our Services</h1>
+        <h1 data-key="services-title">Our Services</h1>
         <div>
           <h3>Engine Parts</h3>
           <p>We provide high-quality engine parts for all car models, ensuring performance and durability.</p>
@@ -44,11 +50,9 @@
     </main>
 
     <footer>
-      <p>© 2024 Delta Batt'ha Parts Co. All rights reserved.</p>
-      <p>
-        Contact us: <a href="mailto:info@dbpco.com">info@dbpco.com</a> | Phone:
-        +123-456-7890
-      </p>
+      <p data-key="footer-rights">© 2024 DELTA AL-BATT'HA TRADING CO. All rights reserved.</p>
+      <p data-key="footer-contact">Phone: +123-456-7890 | Email: contact@deltaparts.com</p>
     </footer>
+    <script src="../js/dbp.js"></script>
   </body>
 </html>

@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DELTA AL-BATT'HA PARTS</title>
-    <link rel="stylesheet" href="css/dbp.css" />
-  </head>
-  <body>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة دلتا البطحاء التجارية</title>
+    <link rel="stylesheet" href="css/dbp.css">
+</head>
+<body>
     <header>
-      <div class="logo-container">
-        <a href="index.html"><img src="img/logo.png" alt="Company Logo" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="html/services.html">Services</a></li>
-          <li><a href="html/contact.html">Contact</a></li>
-          <li><a href="html/aboutus.html">About</a></li>
-        </ul>
-      </nav>
+        <div class="logo-container">
+    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+  </div>
+  <div class="hamburger-lang-container">
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <button id="lang-toggle">EN</button>
+  </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-key="home">الرئيسية</a></li>
+                <li><a href="html/services.html" data-key="services">الخدمات</a></li>
+                <li><a href="html/contact.html" data-key="contact">اتصل بنا</a></li>
+                <li><a href="html/aboutus.html" data-key="about">حول</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>DELTA AL-BATT'HA TRADING CO.</h1>
-      <h2>Your Trusted Source for Genuine Car Parts</h2>
-      <p>We offer high-quality, reliable car parts to meet your needs. Browse our wide range of products!</p>
-      <button onclick="window.location.href='html/services.html';">Explore Services</button>
+        <h1 data-key="hero-title">شركة دلتا البطحاء التجارية</h1>
+        <h2 data-key="hero-subtitle">مصدر موثوق لقطع غيار السيارات الأصلية</h2>
+        <p data-key="hero-desc">نوفر قطع غيار سيارات عالية الجودة لتلبية احتياجاتك. تصفح مجموعة منتجاتنا الواسعة!</p>
+        <button onclick="window.location.href='html/services.html';" data-key="explore">استكشاف الخدمات</button>
     </section>
 
+    <!-- Features Section -->
     <section class="features">
-      <div>Engine Parts</div>
-      <div>Suspension</div>
-      <div>Electronics</div>
-      <div>Accessories</div>
+        <div id="altima" class="car">التيما</div>
+        <div id="armada" class="car">ارمادا</div>
+        <div id="cedric" class="car">سيدريك</div>
+        <div id="civilian" class="car">سفليان</div>
+        <div id="datsun" class="car">داتسون</div>
+        <div id="kicks" class="car">كيكس</div>
+        <div id="laurel" class="car">لوريل</div>
+        <div id="navara" class="car">نافارا</div>
+        <div id="pathfinder" class="car">باثفايندر</div>
+        <div id="patrol" class="car">باترول</div>
+        <div id="sentra" class="car">سنترا</div>
+        <div id="sunny" class="car">صني</div>
+        <div id="tiida" class="car">تيدا</div>
+        <div id="urvan" class="car">اورفان</div>
+        <div id="xterra" class="car">اكستيرا</div>
+        <div id="xtrail" class="car">اكستريل</div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <p>© 2024 DELTA AL-BATT'HA TRADING CO. All rights reserved.</p>
-      <p>
-        Phone: +123-456-7890 | Email: <a href="mailto:contact@deltaparts.com">contact@deltaparts.com</a>
-      </p>
+        <p data-key="footer-rights">© 2024 .شركة دلتا البطحاء التجارية | جميع الحقوق محفوظة</p>
+           
+
     </footer>
-  </body>
+
+    <script src="js/dbp.js"></script>
+</body>
 </html>
