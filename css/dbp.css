@@ -4,16 +4,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 
-/* Hamburger Menu */
+.hamburger-lang-container {
+  display: flex;
+  align-items: center;
+}
+
 .hamburger-menu {
+  position: relative;
+  right: 10px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  gap: 4px;
-  
+  gap: 5px;
 }
 
 .hamburger-menu span {
@@ -26,27 +30,45 @@ body {
 .nav-links {
   display: none;
   flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
   background-color: #ffffff;
   position: absolute;
   top: 113px;
   right: 0;
   width: 20%;
   padding: 10px 0;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
+  overflow: hidden; /* Prevent content from being visible when collapsed */
+  max-height: 0; /* Start with a height of 0 */
+  transition: max-height 0.3s ease, opacity 0.5s ease; /* Smooth transition for height and opacity */
+  opacity: 0; /* Hidden when not visible */
 }
 
 .nav-links.show {
-  display: flex;
+  display: flex; /* Make it visible */
+  max-height: 500px; /* Set a large enough height to accommodate all links */
+  opacity: 1; /* Fully visible */
+}
+
+.nav-links li {
+  list-style: none;
+  width: 100%; /* Ensure full width for padding alignment */
+}
+
+.nav-links li a {
+  color: #293089;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px; /* Add padding to push text away from the left edge */
+  display: block;
+}
+
+.nav-links li a:hover {
+  color: #6a8dd8;
 }
 
 /* Language Toggle Button */
 #lang-toggle {
-  position: relative;
-  top: -21px;
-  right: 50px;
-  padding: 3px 5px;
+  padding: 5px 10px;
   font-size: 0.9em;
   font-weight: bold;
   color: #ffffff;
@@ -54,7 +76,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -78,23 +99,6 @@ header {
   height: auto;
 }
 
-.nav-links li {
-  list-style: none;
-  text-align: center;
-}
-
-.nav-links li a {
-  color: #293089;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  display: block;
-}
-
-.nav-links li a:hover {
-  color: #6a8dd8;
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -102,6 +106,7 @@ header {
   background: linear-gradient(to bottom, #293089, #6a8dd8);
   color: white;
 }
+
 /* Explore Button Styling */
 .hero button {
   background-color: #ffffff;

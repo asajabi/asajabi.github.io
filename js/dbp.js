@@ -95,7 +95,9 @@ document.getElementById("hamburger-menu").addEventListener("click", function () 
     // Smooth animation for opening/closing
     if (navLinks.classList.contains("show")) {
         navLinks.style.maxHeight = navLinks.scrollHeight + "px";
+        navLinks.style.opacity = "2";
     } else {
         navLinks.style.maxHeight = null;
+        navLinks.style.opacity = "0";
     }
 });

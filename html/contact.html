@@ -1,52 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - DBPCO</title>
-  <link rel="stylesheet" href="../css/dbp.css">
-</head>
-<body>
-  <header>
-    <div class="logo-container">
-      <a href="../index.html"><img src="../img/logo.png" alt="Company Logo"></a>
-    </div>
-    <div class="hamburger-lang-container">
-      <div class="hamburger-menu" id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اتصل بنا - دلتا البطحاء</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="../index.html"><img src="../img/logo.png" alt="شعار الشركة" /></a>
       </div>
-      <button id="lang-toggle">EN</button>
-    </div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="../index.html" data-key="home">Home</a></li>
-      <li><a href="services.html" data-key="services">Services</a></li>
-      <li><a href="contact.html" data-key="contact">Contact</a></li>
-      <li><a href="aboutus.html" data-key="about">About</a></li>
-    </ul>
-  </header>
-
-  <main>
-    <section class="contact-form">
-      <h1 data-key="contact-title">Contact Us</h1>
-      <p data-key="contact-desc">We'd love to hear from you! Please fill out the form below.</p>
-      <form action="https://formsubmit.co/your-email" method="POST">
-        <label for="name" data-key="name-label">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email" data-key="email-label">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message" data-key="message-label">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit" data-key="send-button">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p data-key="footer-rights">© 2024 DELTA AL-BATT'HA TRADING CO. All rights reserved.</p>
-    <p data-key="footer-contact">Phone: +123-456-7890 | Email: contact@deltaparts.com</p>
-  </footer>
-  <script src="../js/dbp.js"></script>
-</body>
+      <div class="hamburger-lang-container">
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="lang-toggle">EN</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" data-key="home">الرئيسية</a></li>
+        <li><a href="services.html" data-key="services">الخدمات</a></li>
+        <li><a href="contact.html" data-key="contact">اتصل بنا</a></li>
+        <li><a href="aboutus.html" data-key="about">حول</a></li>
+      </ul>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <section class="contact">
+        <h1 data-key="contact-title">اتصل بنا</h1>
+        <p data-key="contact-desc">نود أن نسمع منك! يرجى ملء النموذج أدناه.</p>
+        <form action="https://formsubmit.co/your-email" method="POST">
+          <label for="name" data-key="name-label">اسمك:</label>
+          <input type="text" id="name" name="name" placeholder="أدخل اسمك" data-key="name-placeholder" required />
+          <label for="email" data-key="email-label">بريدك الإلكتروني:</label>
+          <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" data-key="email-placeholder" required />
+          <label for="message" data-key="message-label">رسالتك:</label>
+          <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا" data-key="message-placeholder" required></textarea>
+          <button type="submit" data-key="send-button">إرسال الرسالة</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p data-key="footer-rights">© 2024 شركة دلتا البطحاء التجارية. جميع الحقوق محفوظة.</p>
+      <p data-key="footer-contact">الهاتف: +123-456-7890 | البريد الإلكتروني: contact@deltaparts.com</p>
+    </footer>
+    <script src="../js/contact.js"></script>
+  </body>
 </html>
