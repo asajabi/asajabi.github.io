@@ -4,6 +4,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 /* Hamburger Menu */
@@ -12,6 +13,7 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  
 }
 
 .hamburger-menu span {
@@ -26,7 +28,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   position: absolute;
-  top: 120px;
+  top: 113px;
   right: 0;
   width: 20%;
   padding: 10px 0;
@@ -66,7 +68,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 0px 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -99,6 +101,27 @@ header {
   padding: 40px 20px;
   background: linear-gradient(to bottom, #293089, #6a8dd8);
   color: white;
+}
+/* Explore Button Styling */
+.hero button {
+  background-color: #ffffff;
+  color: #293089;
+  border: 2px solid #293089; /* Adding a border to enhance the design */
+  padding: 12px 25px; /* Adjust padding for a better look */
+  font-size: 1.1em; /* Slightly larger text for emphasis */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: Makes the text all uppercase */
+  border-radius: 30px; /* Rounded button for a modern look */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+.hero button:hover {
+  background-color: #293089; /* Button color changes on hover */
+  color: #ffffff; /* Text becomes white */
+  transform: scale(1.05); /* Slightly enlarge on hover for emphasis */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 /* Features Section */
