@@ -19,7 +19,7 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             "hero-subtitle": "مصدر موثوق لقطع غيار السيارات الأصلية",
             "hero-desc": "!نوفر قطع غيار سيارات عالية الجودة لتلبية احتياجاتك. تصفح مجموعة منتجاتنا الواسعة",
             explore: "استكشاف الخدمات",
-            "footer-rights": "© 2024 .شركة دلتا البطحاء التجارية. جميع الحقوق محفوظة",
+            "footer-rights": "© 2024 .شركة دلتا البطحاء للتجارة. جميع الحقوق محفوظة",
             "footer-contact": "هاتف: +123-456-7890 | بريد إلكتروني: contact@deltaparts.com",
             cars: {
                 altima: "التيما",
