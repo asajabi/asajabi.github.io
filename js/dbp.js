@@ -15,7 +15,7 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             services: "الخدمات",
             contact: "اتصل بنا",
             about: "حول",
-            "hero-title": "شركة دلتا البطحاء التجارية",
+            "hero-title": "شركة دلتا البطحاء للتجارة",
             "hero-subtitle": "مصدر موثوق لقطع غيار السيارات الأصلية",
             "hero-desc": "!نوفر قطع غيار سيارات عالية الجودة لتلبية احتياجاتك. تصفح مجموعة منتجاتنا الواسعة",
             explore: "استكشاف الخدمات",
